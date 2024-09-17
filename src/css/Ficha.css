@@ -1,0 +1,31 @@
+.ficha{
+    margin: 20px;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.titulo{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+p{
+    font-family: Roboto, sans-serif;
+    color: white; 
+}
+
+a{
+    color: white;
+}
+
+.aniadir{
+    background-color: rgb(228, 201, 221);
+}
+
+.poster{
+    height: 350px;
+    width: 225px;
+}
+
