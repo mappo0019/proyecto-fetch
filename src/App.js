@@ -18,9 +18,19 @@ function App() {
     let result = await response.Search;
     if(result !== undefined)
       setPelis(result);
-    else{
+    else
       setPelis(Array(0));
+    if(text === "Barbie" || text ==="barbie"){
+      document.body.style.background = "rgb(2,0,36)";
+      document.body.style.background = "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,144,214,1) 20%, rgba(163,86,143,1) 100%)";
+      document.querySelector(".app-titulo").style.color = "rgb(105, 8, 81)";
     }
+    else{
+      document.body.style.background = "rgb(2,0,36)";
+      document.body.style.background = "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(186,215,195,1) 35%, rgba(0,212,255,1) 100%)";
+      document.querySelector(".app-titulo").style.color = "#0a4f58";
+    }
+    
   }
 
   function addPeli(peli){
@@ -34,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>¡ K n o w <br/> y o u r <br/>m o v i e ! </h1>
+      <h1 className = "app-titulo">¡ K n o w <br/> y o u r <br/>m o v i e ! </h1>
       <div className = "pantalla">
         <div>
           <Buscador onClickAlto = {clickHandler}/>
